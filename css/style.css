@@ -47,8 +47,10 @@ a {
   color: white;
 }
 
-#ms-right {
-  text-align: right;
+p {
+  font-size: 20px;
+  padding: 20px 0;
+  margin-bottom: 0px;
 }
 
 .ms-hr {
@@ -69,6 +71,35 @@ a {
   padding: 0 10px;
   padding-bottom: 10px;
 }
+
+.ms-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+#cabin {
+  background-image: url(../img/cabin.png);
+}
+
+#cake {
+  background-image: url(../img/cake.png);
+}
+
+#circus {
+  background-image: url(../img/circus.png);
+}
+
+#game {
+  background-image: url(../img/game.png);
+}
+
+#safe {
+  background-image: url(../img/safe.png);
+}
+
+#submarine {
+  background-image: url(../img/submarine.png);
+}
 /* fine generali */
 
 /* HEADER */
@@ -79,6 +110,11 @@ header .ms-navbar {
   color: white;
 }
 
+header .ms-navbar i {
+  font-size: 24px;
+  padding-top: 20px;
+
+}
 /* jumbotron */
 header .ms-jumbotron  {
   background-color: #1abc9c;
@@ -95,6 +131,7 @@ header .ms-jumbotron img {
 /* fine header */
 
 /* MAIN */
+/* portfolio */
 main .ms-portfolio {
   margin: 90px 0;
 }
@@ -102,20 +139,100 @@ main .ms-portfolio-item {
   background-color: red;
   height: 240px;
   margin: 30px 0;
-}
-
-main .ms-portfolio-item img {
-  width: 100%;
   border-radius: 10px;
 }
 
+/* about */
 main .ms-about {
   background-color: #1abc9c;
-  height: 300px;
-  margin: 15px 0;
   color: white;
+  padding: 50px 0;
+}
+
+main  .ms-about .container .row #download a {
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+main  .ms-about .container .row #download p {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+/* contact */
+main .ms-contact {
+  padding-bottom: 100px;
+}
+
+main .ms-contact .container form .form-group #txtArea {
+  width: 100%;
 }
 /* fine main */
+
+/* FOOTER */
+/* address */
+footer {
+  color: white;
+}
+
+footer .ms-address {
+  background-color: #2c3e50;
+}
+
+footer .ms-address #ms-social h3{
+  padding-bottom: 20px;
+}
+
+footer .ms-address p {
+  padding-top: 0px;
+}
+
+footer .ms-address #ms-social a {
+  display: inline-block;
+}
+
+footer .ms-address #ms-social i {
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+footer .ms-address .container {
+  padding: 50px 0;
+}
+
+footer .ms-address .container > div {
+  padding: 0px 50px;
+}
+
+footer .ms-address .container #ms-social a {
+
+}
+
+/* copyright */
+footer .ms-copyright {
+  background-color: #1a252f;
+}
+
+footer .ms-copyright p {
+  font-size: 16px;
+}
+
+/* versione mobile */
+@media all and (max-width:767px){
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+/* fine versione mobile  */
 
 /* versione tablet */
 @media all and (min-width: 768px) and (max-width:991px){
